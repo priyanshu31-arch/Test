@@ -21,8 +21,11 @@ export default function TabNavigator() {
               iconName = focused ? 'home' : 'home-outline';
             } else if (route.name === 'Profile') {
               iconName = focused ? 'person' : 'person-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'settings' : 'settings-outline';
+            }
+            else if (route.name === 'Library') {
+              iconName = focused ? 'library' : 'library-outline';
+            } else if (route.name === 'Playlist') {
+              iconName = focused ? 'playlist' : 'playlist-outline';
             }
 
             return <Ionicons name={iconName} size={size} color={color} />;
